@@ -1,9 +1,10 @@
 class Solution {
-    public int romanToInt(String s) {
+public:
+    int romanToInt(string s) {
         int result = 0;
         int sum = 0;
         for (int i = s.length()-1; i>=0; i--) {
-            char letter = s.charAt(i);
+            char letter = s[i];
             if (letter == 'I') result = 1;
             if (letter == 'V') result = 5;
             if (letter == 'X') result = 10;
@@ -20,4 +21,4 @@ class Solution {
         }
         return sum;
     }
-}
+};
